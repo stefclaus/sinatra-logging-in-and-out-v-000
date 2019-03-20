@@ -8,5 +8,8 @@ class EditBalance < ActiveRecord::Migration[4.2]
 #    end
 #  end
 
+def change
+      change_column(:users, :balance, :float)
+  end #ends method
 
 end
